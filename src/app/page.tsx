@@ -10,7 +10,7 @@ import Solutions from "./components/home/solution";
 
 
 export const metadata: Metadata = {
-    title: "Home | Awake Agency",
+    title: "Home | Sophia",
 };
 
 
