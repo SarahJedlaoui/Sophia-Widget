@@ -49,7 +49,7 @@ function HeroSection() {
                 {...bottomAnimation}
                 className="relative flex flex-col text-left items-center gap-4"
               >
-                <h1 className="text-white text-7xl font-medium w-full">
+                <h1 className="text-white  font-medium w-full">
                   Ask
                   <span className="instrument-font italic font-normal dark:text-white/70">
                     {" "}

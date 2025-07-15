@@ -37,7 +37,7 @@ function Innovation() {
   });
   return (
     <section id="services">
-      <div ref={ref} className="mt-24 2xl:py-20 py-11">
+      <div ref={ref} className=" 2xl:py-20 py-11">
         <div className="container">
           <div className="flex flex-col gap-12">
             <div className="flex flex-col justify-center items-left gap-10 lg:gap-16">
