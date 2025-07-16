@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
-
+import Link from "next/link";
 const dummyVideos = [
   {
     youtubeId: "4AwyVTHEU3s",
@@ -69,17 +69,19 @@ function HeroSection() {
                     placeholder="Ask anything"
                     className="flex-1 bg-transparent text-white placeholder-gray-400 focus:outline-none px-3"
                   />
-                  <button className="w-9 h-9 flex items-center justify-center bg-black rounded-full hover:scale-105 transition">
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="white"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M4 12L2 21L21 12L2 3L4 12Z" />
-                    </svg>
-                  </button>
+                  <Link href="/answers">
+                    <button className="w-9 h-9 flex items-center justify-center bg-black rounded-full hover:scale-105 transition">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="white"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M4 12L2 21L21 12L2 3L4 12Z" />
+                      </svg>
+                    </button>
+                  </Link>
                 </div>
 
                 <p className="text-white/60 max-w-38 text-dark_black/60 dark:text-white/60">
@@ -104,7 +106,6 @@ function HeroSection() {
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                     className="w-100 h-full object-center"
-                    
                   />
                 </div>
               ))}
