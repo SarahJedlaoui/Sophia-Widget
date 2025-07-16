@@ -3,6 +3,7 @@
 
 import React from "react";
 import { Paperclip, Send, Link as LinkIcon } from "lucide-react";
+import Link from "next/link";
 
 const videos = [
   {
@@ -26,10 +27,10 @@ const videos = [
 ];
 
 const sources = [
-  { name: "Dr Sarah", image: "/images/home/creative/creative_img_3.png" },
-  { name: "AAOS", image: "/images/home/creative/creative_img_3.png" },
+  { name: "Dr Sarah", image: "/images/home/creative/creative_img_1.png" },
+  { name: "AAOS", image: "/images/home/creative/creative_img_2.png" },
   { name: "Kim John", image: "/images/home/creative/creative_img_3.png" },
-  { name: "Dr Sarah", image: "/images/home/creative/creative_img_3.png" },
+  { name: "Dr Sarah", image: "/images/home/creative/creative_img_4.png" },
 ];
 
 const answers = [
@@ -68,6 +69,14 @@ const answers = [
 export default function KneeSurgeryPage() {
   return (
     <main className="max-w-6xl mx-auto px-4 py-12 text-gray-800">
+    <div className="mb-4">
+    <Link
+      href="/"
+      className="text-sm  hover:underline flex items-center gap-1"
+    >
+      <span className="text-3xl">←</span> 
+    </Link>
+  </div>
       <h1 className="text-3xl md:text-4xl font-bold mb-6 text-black">
         Can I Shower After My Knee Surgery?
       </h1>
